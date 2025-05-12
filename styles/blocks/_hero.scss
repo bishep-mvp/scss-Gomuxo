@@ -23,17 +23,7 @@
       display: flex;
       align-items: center;
       column-gap: 31px;
-
-      //   &::after {
-      //     position: absolute;
-      //     content: "";
-      //     top: -110%;
-      //     left: 0;
-      //     width: 897px;
-      //     height: 897px;
-      //     background-image: url("../../images/hero/hero-bg.png");
-      //     z-index: -1;
-      //   }
+      z-index: 5;
     }
 
     &-image {
@@ -118,6 +108,11 @@
       background-color: var(--color-blue);
       padding: 70px 95px;
 
+      @include desktop-high {
+        padding: 60px 50px;
+        column-gap: 130px;
+      }
+
       &-side {
         position: relative;
 
@@ -129,12 +124,20 @@
           width: 1px;
           height: 220px;
           background-image: url("../../images/hero/hero-line.png");
+
+          @include desktop-high {
+            left: 136%;
+          }
         }
       }
     }
 
     &-right {
       margin-right: 73px;
+
+      @include desktop-high {
+        margin-right: 30px;
+      }
     }
   }
 }
