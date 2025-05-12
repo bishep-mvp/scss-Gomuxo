@@ -1,0 +1,9 @@
+.button {
+  @include reset-button;
+
+  font-size: 18px;
+  font-weight: 700;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 13px 45px;
+}

@@ -32,6 +32,7 @@ h4 {
 h1,
 .h1 {
   @include fluid-text(80, 63);
+  font-family: var(--font-family-accent);
 }
 
 h2,

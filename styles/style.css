@@ -171,13 +171,13 @@ svg * {
   --box-shadow: 50px 50px 100px #00000040;
   --container-width: 1375px;
   --container-padding-x: 15px;
-  --font-family-base: "NexaText-Trial-Regular", sans-serif;
-  --font-family-accent: "ArgueDEMO", sans-serif;
+  --font-family-base: "Nexa Text-Trial", sans-serif;
+  --font-family-accent: "Argue DEMO", sans-serif;
   --transition-duration: 0.2s;
 }
 
 body {
-  font-size: clamp(16px, 1.125vw, 18);
+  font-size: clamp(16px, 1.125vw, 18px);
   font-family: var(--font-family-base);
   font-weight: 400;
   color: var(--color-dark);
@@ -193,7 +193,7 @@ svg * {
 }
 
 a {
-  font-size: clamp(18px, 1.25vw, 20);
+  font-size: clamp(18px, 1.25vw, 20px);
   text-decoration: none;
   color: inherit;
 }
@@ -207,20 +207,32 @@ h4 {
 
 h1,
 .h1 {
-  font-size: clamp(63px, 5vw, 80);
+  font-size: clamp(63px, 5vw, 80px);
+  font-family: var(--font-family-accent);
 }
 
 h2,
 .h2 {
-  font-size: clamp(54px, 3.75vw, 60);
+  font-size: clamp(54px, 3.75vw, 60px);
 }
 
 h3,
 .h3 {
-  font-size: clamp(36px, 2.5vw, 40);
+  font-size: clamp(36px, 2.5vw, 40px);
 }
 
 h4,
 .h4 {
-  font-size: clamp(24px, 1.875vw, 30);
+  font-size: clamp(24px, 1.875vw, 30px);
+}
+
+.button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 13px 45px;
 }/*# sourceMappingURL=style.css.map */
