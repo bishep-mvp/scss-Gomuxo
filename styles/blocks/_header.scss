@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 115px;
+
+  @include desktop {
+    padding: 24px 55px;
+  }
+
+  @include tablet {
+    padding: 12px 27px;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 82px;
+
+      @include desktop {
+        column-gap: 41px;
+      }
+
+      @include tablet {
+        column-gap: 20px;
+      }
+    }
+
+    &-link {
+      position: relative;
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        width: 0;
+        height: 2px;
+        background-color: var(--color-accent);
+        transition-duration: var(--transition-duration);
+      }
+    }
+
+    &-button {
+        @include tablet {
+            padding: 6px 23px;
+        }
+    }
+  }
+}

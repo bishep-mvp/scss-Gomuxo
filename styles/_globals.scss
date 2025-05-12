@@ -3,7 +3,7 @@ body {
 
   font-family: var(--font-family-base);
   font-weight: 400;
-  color: var(--color-dark);
+  color: var(--color-black);
   background-color: var(--color-magenta);
 }
 
@@ -26,12 +26,13 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: var(--font-family-accent);
   font-weight: 400;
 }
 
 h1,
 .h1 {
-  @include fluid-text(80, 63);
+  @include fluid-text(80, 50);
   font-family: var(--font-family-accent);
 }
 

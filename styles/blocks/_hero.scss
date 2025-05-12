@@ -1,0 +1,140 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+  background-image: url("../../images/hero/hero-bg-test.png");
+  background-repeat: no-repeat;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 100px;
+
+    &-info {
+      display: flex;
+    }
+
+    &-controls {
+      position: relative;
+      display: flex;
+      align-items: center;
+      column-gap: 31px;
+
+      //   &::after {
+      //     position: absolute;
+      //     content: "";
+      //     top: -110%;
+      //     left: 0;
+      //     width: 897px;
+      //     height: 897px;
+      //     background-image: url("../../images/hero/hero-bg.png");
+      //     z-index: -1;
+      //   }
+    }
+
+    &-image {
+      position: relative;
+      margin-top: 100px;
+      margin-left: 50px;
+      align-self: start;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -265%;
+        left: -140%;
+        width: 420px;
+        height: 619px;
+        background-image: url("../../images/hero/hero-woman.png");
+        z-index: -1;
+      }
+    }
+  }
+
+  &__title {
+    line-height: 1;
+  }
+
+  &__link {
+    position: relative;
+    align-self: end;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -100px;
+      right: -120px;
+      width: 110px;
+      aspect-ratio: 1;
+      background-image: url("../../icons/face.svg");
+      background-color: var(--color-blue);
+      border-radius: 50%;
+    }
+
+    &-arrow {
+      position: absolute;
+      content: "";
+      top: -90px;
+      right: -190px;
+      width: 33px;
+      aspect-ratio: 1;
+      background: url("../../icons/purple-arrow.svg") center no-repeat;
+      background-color: var(--color-light);
+      border-radius: 50%;
+      padding: 39px;
+      border: 10px solid var(--color-magenta);
+    }
+  }
+
+  &__button {
+    &-alt {
+      color: var(--color-light);
+      background-color: var(--color-accent);
+      border: 1px solid var(--color-accent);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    align-self: start;
+    margin-block: -265px;
+
+    &-left {
+      position: relative;
+      display: flex;
+      align-items: center;
+      column-gap: 180px;
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+      color: var(--color-light);
+      background-color: var(--color-blue);
+      padding: 70px 95px;
+
+      &-side {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: -30%;
+          left: 150%;
+          width: 1px;
+          height: 220px;
+          background-image: url("../../images/hero/hero-line.png");
+        }
+      }
+    }
+
+    &-right {
+      margin-right: 73px;
+    }
+  }
+}
