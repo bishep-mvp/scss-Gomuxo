@@ -1,0 +1,22 @@
+:root {
+  --color-light: #ffffff;
+  --color-black: #000000;
+  --color-accent: #f65606;
+  --color-magenta: #eef1fb;
+  --color-purple: #bf6fe1;
+  --color-yellow: #f7cc5d;
+  --color-blue: #1a1d30;
+
+  --border: 1px solid var(--color-black);
+  --border-radius: 6px;
+
+  --box-shadow: 50px 50px 100px #00000040;
+
+  --container-width: 1375px;
+  --container-padding-x: 15px;
+
+  --font-family-base: "NexaText-Trial-Regular", sans-serif;
+  --font-family-accent: "ArgueDEMO", sans-serif;
+
+  --transition-duration: 0.2s;
+}

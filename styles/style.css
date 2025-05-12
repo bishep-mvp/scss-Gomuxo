@@ -1,0 +1,226 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+:where(ul[class]) {
+  list-style: none;
+}
+
+:where(address[class]) {
+  font-style: normal;
+}
+
+p {
+  --paragraphMarginBottom: 24px;
+  margin-block: 0;
+}
+
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+a:where([class]) {
+  display: inline-flex;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+:where([fill]:not([fill=none], [fill^=url])) {
+  fill: currentColor;
+}
+
+:where([stroke]:not([stroke=none], [stroke^=url])) {
+  stroke: currentColor;
+}
+
+svg * {
+  transition-property: fill, stroke;
+}
+
+:where(table) {
+  border-collapse: collapse;
+  border-color: currentColor;
+}
+
+@font-face {
+  font-family: "Nexa Text-Trial Extra";
+  src: url("../fonts/NexaText-Trial-ExtraBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nexa Text-Trial";
+  src: url("../fonts/NexaText-Trial-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nexa Text-Trial";
+  src: url("../fonts/NexaText-Trial-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Argue DEMO";
+  src: url("../fonts/ArgueDEMO.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .visible-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+:root {
+  --color-light: #ffffff;
+  --color-black: #000000;
+  --color-accent: #f65606;
+  --color-magenta: #eef1fb;
+  --color-purple: #bf6fe1;
+  --color-yellow: #f7cc5d;
+  --color-blue: #1a1d30;
+  --border: 1px solid var(--color-black);
+  --border-radius: 6px;
+  --box-shadow: 50px 50px 100px #00000040;
+  --container-width: 1375px;
+  --container-padding-x: 15px;
+  --font-family-base: "NexaText-Trial-Regular", sans-serif;
+  --font-family-accent: "ArgueDEMO", sans-serif;
+  --transition-duration: 0.2s;
+}
+
+body {
+  font-size: clamp(16px, 1.125vw, 18);
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  color: var(--color-dark);
+  background-color: var(--color-magenta);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  font-size: clamp(18px, 1.25vw, 20);
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+h1,
+.h1 {
+  font-size: clamp(63px, 5vw, 80);
+}
+
+h2,
+.h2 {
+  font-size: clamp(54px, 3.75vw, 60);
+}
+
+h3,
+.h3 {
+  font-size: clamp(36px, 2.5vw, 40);
+}
+
+h4,
+.h4 {
+  font-size: clamp(24px, 1.875vw, 30);
+}/*# sourceMappingURL=style.css.map */
