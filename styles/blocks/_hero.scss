@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 70px;
   background-image: url("../../images/hero/hero-bg-test.png");
   background-repeat: no-repeat;
+
+  @include mobile {
+    padding-inline: 15px;
+    row-gap: 50px;
+  }
 
   &__top {
     display: flex;
@@ -14,8 +19,22 @@
     justify-content: center;
     row-gap: 100px;
 
+    @include desktop {
+      row-gap: 50px;
+    }
+
+    @include mobile {
+      row-gap: 150px;
+    }
+
     &-info {
+      position: relative;
       display: flex;
+      z-index: 5;
+
+      @include mobile {
+        flex-direction: column;
+      }
     }
 
     &-controls {
@@ -24,6 +43,16 @@
       align-items: center;
       column-gap: 31px;
       z-index: 5;
+      white-space: nowrap;
+
+      @include mobile {
+        column-gap: 15px;
+      }
+
+      @include mobile-s {
+        flex-direction: column;
+        row-gap: 15px;
+      }
     }
 
     &-image {
@@ -32,6 +61,20 @@
       margin-left: 50px;
       align-self: start;
       z-index: 1;
+
+      @include desktop {
+        width: 130px;
+        height: 60px;
+      }
+
+      @include mobile {
+        margin-top: 75px;
+        align-self: center;
+      }
+
+      @include mobile-s {
+        margin-left: 140px;
+      }
 
       &::before {
         position: absolute;
@@ -42,12 +85,41 @@
         height: 619px;
         background-image: url("../../images/hero/hero-woman.png");
         z-index: -1;
+
+        @include desktop-high {
+          top: -185%;
+          left: -95%;
+          width: 305px;
+          height: 425px;
+          background-size: cover;
+        }
+
+        @include desktop {
+          top: -318%;
+          left: -125%;
+          width: 210px;
+          height: 308px;
+          background-size: cover;
+        }
+
+        @include mobile {
+          top: -318%;
+          left: -125%;
+          width: 210px;
+          height: 308px;
+          background-size: cover;
+        }
       }
     }
   }
 
   &__title {
     line-height: 1;
+
+    @include mobile-s {
+      text-align: center;
+      line-height: 1.4;
+    }
   }
 
   &__link {
@@ -64,6 +136,15 @@
       background-image: url("../../icons/face.svg");
       background-color: var(--color-blue);
       border-radius: 50%;
+
+      @include mobile {
+        top: 12px;
+        right: 220px;
+      }
+
+      @include mobile-s {
+        right: 160px;
+      }
     }
 
     &-arrow {
@@ -78,6 +159,15 @@
       border-radius: 50%;
       padding: 39px;
       border: 10px solid var(--color-magenta);
+
+      @include mobile {
+        top: 23px;
+        right: 145px;
+      }
+
+      @include mobile-s {
+        right: 85px;
+      }
     }
   }
 
@@ -97,6 +187,16 @@
     align-self: start;
     margin-block: -265px;
 
+    @include desktop {
+      margin-top: 80px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 25px;
+    }
+
     &-left {
       position: relative;
       display: flex;
@@ -111,6 +211,11 @@
       @include desktop-high {
         padding: 60px 50px;
         column-gap: 130px;
+      }
+
+      @include desktop {
+        padding: 30px 25px;
+        column-gap: 65px;
       }
 
       &-side {
@@ -128,6 +233,12 @@
           @include desktop-high {
             left: 136%;
           }
+
+          @include desktop {
+            top: -12%;
+            left: 118%;
+            height: 150px;
+          }
         }
       }
     }
@@ -137,6 +248,27 @@
 
       @include desktop-high {
         margin-right: 30px;
+      }
+
+      // @include desktop {
+      //   margin-top: 160px;
+      // }
+    }
+
+    &-image {
+      @include desktop-high {
+        width: 390px;
+        height: 580px;
+      }
+
+      @include desktop {
+        width: 195px;
+        height: 280px;
+      }
+
+      @include mobile {
+        width: 385px;
+        height: 550px;
       }
     }
   }
