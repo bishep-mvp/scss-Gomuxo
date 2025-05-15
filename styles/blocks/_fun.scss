@@ -1,0 +1,144 @@
+.fun {
+  position: relative;
+  padding-top: 190px;
+  padding-bottom: 120px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 130px;
+  background: url("../../images/fun/fun-bg.png") center/cover no-repeat;
+
+  @include desktop {
+    padding-top: 130px;
+    padding-bottom: 90px;
+  }
+
+  @include tablet {
+    row-gap: 200px;
+  }
+
+  @include mobile {
+    padding-inline: 15px;
+  }
+
+  &__controls {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+    cursor: pointer;
+
+    @include desktop {
+      top: 27%;
+      left: 43%;
+    }
+
+    @include tablet {
+      top: 10%;
+      left: 40%;
+    }
+
+    &-item {
+      font-family: var(--font-family-accent);
+      font-size: 50px;
+      text-align: center;
+
+      &:hover {
+        color: var(--color-accent);
+        transition-duration: var(--transition-duration);
+      }
+
+      &.active {
+        border: var(--border);
+        border-radius: 50%;
+        padding: 15px 35px 5px;
+
+        &:hover {
+          border-color: var(--color-accent);
+          transition-duration: var(--transition-duration);
+        }
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    column-gap: 153px;
+    margin-left: 250px;
+
+    @include desktop-high {
+      column-gap: 85px;
+    }
+
+    @include desktop {
+      column-gap: 130px;
+      margin-left: 0;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 43px;
+
+      @include tablet {
+        row-gap: 20px;
+      }
+
+      &--start {
+        margin-left: 260px;
+
+        @include desktop-high {
+          margin-left: 150px;
+        }
+
+        @include desktop {
+          margin-left: 0;
+        }
+      }
+      &--alt {
+        margin-block: 155px;
+
+        @include tablet {
+          margin-block: 0;
+        }
+      }
+    }
+
+    &-image {
+      max-width: 514px;
+      height: 581px;
+
+      @include desktop {
+        width: 100%;
+      }
+    }
+
+    &-link {
+      position: relative;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 30%;
+        right: 65%;
+        width: 15px;
+        aspect-ratio: 1;
+        background-image: url("../../icons/blue-arrow.svg");
+      }
+    }
+  }
+}
