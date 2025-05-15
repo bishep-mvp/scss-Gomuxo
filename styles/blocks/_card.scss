@@ -6,8 +6,21 @@
     border-top: 1px solid var(--color-black);
     padding-top: 32px;
 
+    @include desktop {
+      padding-top: 16px;
+      column-gap: 17px;
+    }
+
     &:not(:last-child) {
       padding-bottom: 76px;
+
+      @include desktop {
+        padding-bottom: 52px;
+      }
+
+      @include tablet {
+        padding-bottom: 36px;
+      }
     }
   }
 
@@ -29,6 +42,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 32px;
+
+    @include desktop {
+      row-gap: 16px;
+    }
   }
 
   &__link {
@@ -36,7 +53,18 @@
     position: relative;
     display: flex;
     align-items: center;
-    column-gap: 291px;
+
+    @include desktop {
+      width: 440px;
+    }
+
+    @include tablet {
+      width: 320px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__icon-arrow {
@@ -47,6 +75,10 @@
     padding: 18px;
     background: url("../../icons/white-arrow.svg") center no-repeat;
     border-radius: 50%;
+
+    @include desktop {
+      width: 48px;
+    }
 
     &-accent {
       background-color: var(--color-accent);
