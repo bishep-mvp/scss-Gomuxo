@@ -1,93 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Gomuxo</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <title>Gomuxo</title>
-</head>
+  <body>
+    <header class="header hide">
+      <a href="#!" class="header__logo logo">
+        <img
+          src="./icons/logo.svg"
+          alt="Gomuxo"
+          class="logo__image"
+          width="124"
+          height="33"
+        />
+      </a>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="#!" class="header__menu-link">Home</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#!" class="header__menu-link">Companies</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#!" class="header__menu-link">Skill Business</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#!" class="header__menu-link">Prebuild</a>
+          </li>
+          <li class="header__menu-item">
+            <button class="header__menu-button button">Register</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="hero hide">
+        <div class="hero__top">
+          <div class="hero__top-info">
+            <h1 class="hero__title">
+              We make amazing <br />
+              digital products for <br />
+              your business
+            </h1>
+            <a href="#!" class="hero__link">
+              <span class="visually-hidden">Click to redirect</span>
+              <span class="hero__link-arrow"></span>
+            </a>
+          </div>
 
-<body>
-  <!-- <header class="header">
-    <a href="#!" class="header__logo logo">
-      <img src="./icons/logo.svg" alt="Gomuxo" class="logo__image" width="124" height="33" />
-    </a>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-item">
-          <a href="#!" class="header__menu-link">Home</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#!" class="header__menu-link">Companies</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#!" class="header__menu-link">Skill Business</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#!" class="header__menu-link">Prebuild</a>
-        </li>
-        <li class="header__menu-item">
-          <button class="header__menu-button button">Register</abutton>
-        </li>
-      </ul>
-    </nav>
-  </header> -->
-  <main class="content">
-    <section class="hero">
-      <div class="hero__top">
-        <div class="hero__top-info">
-          <h1 class="hero__title">
-            We make amazing <br />
-            digital products for <br />
-            your business
-          </h1>
-          <a href="#!" class="hero__link">
-            <span class="visually-hidden">Click to redirect</span>
-            <span class="hero__link-arrow"></span>
-          </a>
+          <div class="hero__top-controls">
+            <button class="hero__button hero__button-alt button">
+              Get Started
+            </button>
+            <button class="hero__button button">View Demo</button>
+          </div>
+
+          <div class="hero__top-image">
+            <img
+              src="./images/hero/hero-text.png"
+              alt="UX DESIGN IS MY PASSION"
+              width="233"
+              height="138"
+            />
+          </div>
         </div>
-
-        <div class="hero__top-controls">
-          <button class="hero__button hero__button-alt button">Get Started</button>
-          <button class="hero__button button">View Demo</button>
+        <div class="hero__bottom">
+          <div class="hero__bottom-left">
+            <div class="hero__bottom-left-side">
+              <h2 class="hero__bottom-title">$125K</h2>
+              <div class="hero__bottom-description">
+                <p>
+                  Av, Annual Income with <br />
+                  Our Agency
+                </p>
+              </div>
+            </div>
+            <div class="hero__bottom-right-side">
+              <h2 class="hero__bottom-title">3X</h2>
+              <div class="hero__bottom-description">
+                <p>
+                  Multiple your sales everyday <br />
+                  Inchuding Taxs
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__bottom-right">
+            <img
+              src="./images/hero/hero-man.png"
+              alt=""
+              class="hero__bottom-image"
+              width="606"
+              height="742"
+            />
+          </div>
         </div>
+      </section>
 
-        <div class="hero__top-image">
-          <img src="./images/hero/hero-text.png" alt="UX DESIGN IS MY PASSION">
-        </div>
-      </div>
-      <div class="hero__bottom">
-        <div class="hero__bottom-left">
-          <div class="hero__bottom-left-side">
-            <h2 class="hero__bottom-title">
-              $125K
+      <section class="business">
+        <div class="business__left">
+          <div class="business__left-header">
+            <h2 class="business__title">
+              We Build Premium <br />
+              Business.
             </h2>
-            <div class="hero__bottom-description">
+            <div class="business__description">
               <p>
-                Av, Annual Income with <br />
-                Our Agency
+                Marketing gets the most out of tech opportunities to boost
+                engagement and build relationships. Specifically, VR marketing
+                strengthens companies’
               </p>
             </div>
           </div>
-          <div class="hero__bottom-right-side">
-            <h2 class="hero__bottom-title">
-              3X
-            </h2>
-            <div class="hero__bottom-description">
-              <p>
-                Multiple your sales everyday <br />
-                Inchuding Taxs
-              </p>
-            </div>
+          <div class="business__left-body">
+            <img
+              src="./images/business/business-man.png"
+              width="511"
+              height="523"
+              alt=""
+              class="business__image"
+            />
           </div>
         </div>
-        <div class="hero__bottom-right">
-          <img src="./images/hero/hero-man.png" alt="" class="hero__bottom-image" width="606" height="742">
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
+        <div class="business__right">
+          <ul class="business__list card">
+            <li class="card__item">
+              <span class="card__number card__number-accent h4">01/</span>
+              <div class="card__info">
+                <h3 class="card__title">
+                  Web UI/UX <br />
+                  Design
+                </h3>
 
+                <a href="#!" class="card__link">
+                  Explore
+                  <span class="card__icon-arrow card__icon-arrow-accent"></span>
+                </a>
+              </div>
+            </li>
+            <li class="card__item">
+              <span class="card__number card__number-purple h4">02/</span>
+              <div class="card__info">
+                <h3 class="card__title">
+                  Dashboard and <br />
+                  Saas Design
+                </h3>
+
+                <a href="#!" class="card__link">
+                  Explore
+                  <span class="card__icon-arrow card__icon-arrow-purple"></span>
+                </a>
+              </div>
+            </li>
+            <li class="card__item">
+              <span class="card__number card__number-blue h4">03/</span>
+              <div class="card__info">
+                <h3 class="card__title">
+                  Mobile App Ui/UX <br />
+                  Design
+                </h3>
+
+                <a href="#!" class="card__link">
+                  Explore
+                  <span class="card__icon-arrow card__icon-arrow-blue"></span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,3 +1,43 @@
 .business {
-    
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding-top: 204px;
+  margin-top: 265px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 122px;
+    &-header {
+      display: flex;
+      flex-direction: column;
+      row-gap: 38px;
+      padding-left: 100px;
+    }
+
+    &-body {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "A design so unique, it was created for you";
+        top: 11%;
+        right: 0;
+        width: 184px;
+        height: 44px;
+      }
+    }
+  }
+
+  &__description {
+    max-width: 493px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+  }
 }

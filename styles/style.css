@@ -199,17 +199,21 @@ a {
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
-h4 {
+.h3,
+h4,
+.h4 {
   font-family: var(--font-family-accent);
   font-weight: 400;
+  line-height: 1.2;
 }
 
 h1,
 .h1 {
   font-size: clamp(50px, 5vw, 80px);
-  font-family: var(--font-family-accent);
 }
 
 h2,
@@ -220,6 +224,7 @@ h2,
 h3,
 .h3 {
   font-size: clamp(36px, 2.5vw, 40px);
+  line-height: 1;
 }
 
 h4,
@@ -556,12 +561,13 @@ h4,
 }
 @media (max-width: 1500px) {
   .hero__bottom-left-side::after {
+    top: -40%;
     left: 136%;
   }
 }
 @media (max-width: 1280px) {
   .hero__bottom-left-side::after {
-    top: -12%;
+    top: -20%;
     left: 118%;
     height: 150px;
   }
@@ -591,4 +597,96 @@ h4,
     width: 385px;
     height: 550px;
   }
+}
+
+.business {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-top: 204px;
+  margin-top: 265px;
+}
+.business__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 122px;
+}
+.business__left-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 38px;
+  padding-left: 100px;
+}
+.business__left-body {
+  position: relative;
+}
+.business__left-body::after {
+  position: absolute;
+  content: "A design so unique, it was created for you";
+  top: 11%;
+  right: 0;
+  width: 184px;
+  height: 44px;
+}
+.business__description {
+  max-width: 493px;
+}
+.business__list {
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+}
+
+.card__item {
+  display: flex;
+  align-items: start;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+  border-top: 1px solid var(--color-black);
+  padding-top: 32px;
+}
+.card__item:not(:last-child) {
+  padding-bottom: 76px;
+}
+.card__number-accent {
+  color: var(--color-accent);
+}
+.card__number-purple {
+  color: var(--color-purple);
+}
+.card__number-blue {
+  color: var(--color-blue);
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.card__link {
+  width: 470px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 291px;
+       column-gap: 291px;
+}
+.card__icon-arrow {
+  position: absolute;
+  right: 0;
+  width: 68px;
+  aspect-ratio: 1;
+  padding: 18px;
+  background: url("../../icons/white-arrow.svg") center no-repeat;
+  border-radius: 50%;
+}
+.card__icon-arrow-accent {
+  background-color: var(--color-accent);
+}
+.card__icon-arrow-purple {
+  background-color: var(--color-purple);
+}
+.card__icon-arrow-blue {
+  background-color: var(--color-blue);
 }/*# sourceMappingURL=style.css.map */

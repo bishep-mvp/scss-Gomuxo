@@ -231,11 +231,12 @@
           background-image: url("../../images/hero/hero-line.png");
 
           @include desktop-high {
+            top: -40%;
             left: 136%;
           }
 
           @include desktop {
-            top: -12%;
+            top: -20%;
             left: 118%;
             height: 150px;
           }

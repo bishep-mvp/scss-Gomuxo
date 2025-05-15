@@ -1,0 +1,63 @@
+.card {
+  &__item {
+    display: flex;
+    align-items: start;
+    column-gap: 34px;
+    border-top: 1px solid var(--color-black);
+    padding-top: 32px;
+
+    &:not(:last-child) {
+      padding-bottom: 76px;
+    }
+  }
+
+  &__number {
+    &-accent {
+      color: var(--color-accent);
+    }
+
+    &-purple {
+      color: var(--color-purple);
+    }
+
+    &-blue {
+      color: var(--color-blue);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  &__link {
+    width: 470px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 291px;
+  }
+
+  &__icon-arrow {
+    position: absolute;
+    right: 0;
+    width: 68px;
+    aspect-ratio: 1;
+    padding: 18px;
+    background: url("../../icons/white-arrow.svg") center no-repeat;
+    border-radius: 50%;
+
+    &-accent {
+      background-color: var(--color-accent);
+    }
+
+    &-purple {
+      background-color: var(--color-purple);
+    }
+
+    &-blue {
+      background-color: var(--color-blue);
+    }
+  }
+}
