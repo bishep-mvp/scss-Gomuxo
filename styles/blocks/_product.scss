@@ -1,0 +1,121 @@
+.product {
+  padding-top: 114px;
+  padding-bottom: 228px;
+
+  @include desktop {
+    padding-top: 70px;
+    padding-bottom: 140px;
+  }
+
+  @include mobile {
+    padding-bottom: 70px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 95px;
+
+    @include desktop {
+      column-gap: 30px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 118px;
+
+    @include desktop {
+      row-gap: 60px;
+    }
+
+    @include tablet {
+      row-gap: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+
+    @include desktop {
+      column-gap: 75px;
+    }
+
+    @include tablet {
+      column-gap: 30px;
+    }
+
+    &-left {
+      position: relative;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        width: 95px;
+        aspect-ratio: 1;
+      }
+
+      &::before {
+        top: -17%;
+        left: -20%;
+        background-image: url("../../icons/yellow-star.svg");
+      }
+
+      &::after {
+        top: -40%;
+        left: 23%;
+        background-image: url("../../icons/blue-star.svg");
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 37px;
+
+      @include tablet {
+        row-gap: 18px;
+      }
+
+      &-title {
+        display: flex;
+        align-items: center;
+        column-gap: 23px;
+      }
+
+      &-description {
+        max-width: 437px;
+      }
+
+      &-controls {
+        margin-top: 53px;
+
+        @include desktop {
+          margin-top: 30px;
+        }
+
+        @include tablet {
+          margin-top: 0;
+        }
+
+        @include mobile {
+          margin-block: 60px;
+        }
+      }
+    }
+  }
+}
