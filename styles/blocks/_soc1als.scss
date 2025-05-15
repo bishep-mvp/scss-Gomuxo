@@ -1,0 +1,11 @@
+.soc1als {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+
+    @include mobile {
+        column-gap: 20px;
+    }
+  }
+}
