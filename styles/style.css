@@ -166,6 +166,7 @@ svg * {
   --color-purple: #bf6fe1;
   --color-yellow: #f7cc5d;
   --color-blue: #1a1d30;
+  --color-gray: #dee1e9;
   --border: 1px solid var(--color-blue);
   --border-radius: 6px;
   --box-shadow: 50px 50px 100px #00000040;
@@ -1288,4 +1289,104 @@ h4,
   .product__content-right-controls {
     margin-block: 60px;
   }
+}
+
+.action {
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background: url("../../images/action/action-bg.png") center/cover no-repeat;
+}
+@media (max-width: 1280px) {
+  .action {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+}
+.action__inner {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1023px) {
+  .action__inner {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.action__top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+@media (max-width: 1280px) {
+  .action__top {
+    row-gap: 25px;
+  }
+}
+@media (max-width: 1023px) {
+  .action__top {
+    text-align: center;
+  }
+}
+.action__top-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+@media (max-width: 1280px) {
+  .action__top-info {
+    row-gap: 10px;
+  }
+}
+.action__top-button {
+  align-self: start;
+}
+@media (max-width: 1023px) {
+  .action__top-button {
+    align-self: center;
+  }
+}
+.action__menu {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  -moz-column-gap: 105px;
+       column-gap: 105px;
+  margin-right: 280px;
+  margin-top: -20px;
+}
+@media (max-width: 1280px) {
+  .action__menu {
+    -moz-column-gap: 52px;
+         column-gap: 52px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1023px) {
+  .action__menu {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .action__menu {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+.action__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+@media (max-width: 1280px) {
+  .action__menu-list {
+    row-gap: 15px;
+  }
+}
+.action__menu-link:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.action__menu-link--bordered {
+  border-bottom: 2px solid var(--color-gray);
 }/*# sourceMappingURL=style.css.map */

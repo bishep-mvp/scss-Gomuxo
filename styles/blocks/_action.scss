@@ -1,0 +1,97 @@
+.action {
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  background: url("../../images/action/action-bg.png") center/cover no-repeat;
+
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    @include desktop {
+      row-gap: 25px;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 23px;
+
+      @include desktop {
+        row-gap: 10px;
+      }
+    }
+
+    &-button {
+      align-self: start;
+
+      @include tablet {
+        align-self: center;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    column-gap: 105px;
+    margin-right: 280px;
+    margin-top: -20px;
+
+    @include desktop {
+      column-gap: 52px;
+      margin-top: 100px;
+    }
+
+    @include tablet {
+      margin-right: 0;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      @include desktop {
+        row-gap: 15px;
+      }
+    }
+
+    &-link {
+      &:hover {
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+      }
+
+      &--bordered {
+        border-bottom: 2px solid var(--color-gray);
+      }
+    }
+  }
+}
