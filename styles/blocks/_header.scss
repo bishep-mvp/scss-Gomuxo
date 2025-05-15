@@ -48,9 +48,9 @@
     }
 
     &-button {
-        @include tablet {
-            padding: 6px 23px;
-        }
+      @include tablet {
+        padding: 6px 23px;
+      }
     }
   }
 }
