@@ -1195,6 +1195,12 @@ h4,
     left: 40%;
   }
 }
+@media (max-width: 480px) {
+  .fun__controls {
+    top: 12%;
+    left: 25%;
+  }
+}
 .fun__cards {
   display: flex;
   -moz-column-gap: 153px;

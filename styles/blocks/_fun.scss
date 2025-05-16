@@ -38,6 +38,11 @@
       top: 10%;
       left: 40%;
     }
+
+    @include mobile-s {
+      top: 12%;
+      left: 25%;
+    }
   }
 
   &__cards {
